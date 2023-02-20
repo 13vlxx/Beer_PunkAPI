@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beer API</title>
+    <link rel="stylesheet" href="./css/search.css" />
+    <script src="./js/search.js" defer></script>
+  </head>
+  <body>
+    <div class="search">
+      <h1 id="title">Search a beer</h1>
+      <div class="inputs">
+        <input id="searchInput" type="text" placeholder="Search a beer" />
+        <input onclick="search()" type="submit" value="Search" />
+      </div>
+      <div class="liens">
+        <a href="./list.html">List of beers</a>
+        <a href="./random.html">Random beer</a>
+      </div>
+    </div>
+    <main>
+      <div id="results"></div>
+    </main>
+  </body>
+</html>
