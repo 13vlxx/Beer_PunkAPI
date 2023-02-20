@@ -1,4 +1,6 @@
-async function search() {
+const submit = document.querySelector("#submit");
+
+submit.addEventListener("click", async function search() {
   // Récupération de l'élément input et de sa valeur
   const searchInput = document.getElementById("searchInput");
   const query = searchInput.value;
@@ -33,4 +35,4 @@ async function search() {
       resultsDiv.appendChild(beerDiv);
     });
   }
-}
+});
